@@ -14,6 +14,12 @@ tipo_suolo = st.sidebar.selectbox("Destinazione d'uso area:",
                                  ["Agricola", "Industriale/Commerciale", "Cava/Discarica", "Tetto/Edificio"])
 
 is_idonea = st.sidebar.radio("L'area è classificata come IDONEA (Mappa 2026)?", ["Sì", "No"])
+# Aggiunta link alla mappa nella sidebar
+st.sidebar.markdown("---")
+st.sidebar.info("📍 **Scoprilo qui! - Consulta la Mappa Ufficiale**")
+url_mappa = "https://www.sitr.regione.sicilia.it/geoportale" # URL generico del geoportale Sicilia
+st.sidebar.markdown(f"[Apri la Mappa Aree Idonee Sicilia]({url_mappa})")
+
 
 # NUOVO INPUT: Tipologia Impianto
 tipo_impianto = st.sidebar.selectbox("Tipologia di Impianto:", 
