@@ -120,6 +120,5 @@ with col_info:
         -Area di accelerazione: sottoinsieme “premium” delle aree idonee con iter molto più rapido
         
         Quindi:
-        
         tutte le aree di accelerazione sono (di fatto) aree idonee,
         ma non tutte le aree idonee sono aree di accelerazione.""")
