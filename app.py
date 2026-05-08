@@ -2,7 +2,7 @@ from PIL import Image
 import streamlit as st
 
 # Carica l'immagine dal file locale
-logo = Image.open("logo.png")
+logo = Image.open("logonuovo.png")
 
 # Configurazione Pagina
 st.set_page_config(page_title="Permitting FVT Sicilia 2026", layout="wide")
