@@ -1,8 +1,13 @@
+from PIL import Image
 import streamlit as st
+
+# Carica l'immagine dal file locale
+logo = Image.open("logo.png")
 
 # Configurazione Pagina
 st.set_page_config(page_title="Permitting FVT Sicilia 2026", layout="wide")
 
+st.image(logo, width=100)
 st.title("⚖️ Expert System: Iter Autorizzativo FVT Sicilia 2026")
 
 # Creiamo due colonne: la prima occupa il 70% dello spazio, la seconda il 30%
