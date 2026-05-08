@@ -63,7 +63,7 @@ with col_principale:
                     iter_finale = "PAS" if potenza_mw <= 12 else "AU"
                     note.append("🌾 Richiesta continuità agricola certificata secondo DGR Sicilia 27/2025.")
                 else:
-                    iter_finale = "PAS" if potenza_mw <= 1: "AU"
+                    iter_finale = "PAS" if potenza_mw <= 1 else "AU"
                     note.append("⚠️ Il fotovoltaico standard a terra su suolo agricolo è fortemente limitato.")
             else:
                 iter_finale = "PAS (Iter Ordinario)" if potenza_mw <= 1 else "AU (Iter Ordinario)"
