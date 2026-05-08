@@ -15,9 +15,21 @@ tipo_suolo = st.sidebar.selectbox("Destinazione d'uso area:",
 
 is_idonea = st.sidebar.radio("L'area è classificata come IDONEA (Mappa 2026)?", ["Sì", "No"])
 # Aggiunta link alla mappa nella sidebar
-url_mappa = "https://www.sitr.regione.sicilia.it/portal/apps/webappviewer/index.html?id=f3f54ac44ae04a3584885eaaf0b84d70" # URL generico del geoportale ARC GIS
-st.sidebar.markdown(f"[📍Scoprilo qui! - Consulta la Mappa Ufficiale]({url_mappa})")
+url_mappa1 = "https://www.sitr.regione.sicilia.it/portal/apps/webappviewer/index.html?id=f3f54ac44ae04a3584885eaaf0b84d70" # URL generico del geoportale ARC GIS
+url_mappa2 = "https://areeidonee.gse.it/" # URL del geoportale aree idonee del GSE
+url_mappa3 = "https://areeaccelerazione.gse.it/" # URL del geoportale aree di accelerazione del GSE
+st.sidebar.markdown(f"[📍Scoprilo qui! - Consulta la Mappa Ufficiale]({url_mappa1})")
+st.sidebar.markdown(f"[📍O qui! - Consulta la Mappa Ufficiale GSE, con aree idonee dichiarate dalla regione (fino ad adesso)]({url_mappa2})")
+st.sidebar.markdown(f"[💡Altra piattaforma utile - Consulta la Mappa Ufficiale GSE, per capire (nel caso in cui l'area è idonea) se fa anche parte delle aree di accelerazione]({url_mappa3})")
+st.write("La differenza è importante, perché spesso vengono confuse ma giuridicamente non sono la stessa cosa.
+In sintesi:
+-Area idonea:	area dove gli impianti FER sono considerati compatibili/favoriti
+-Area di accelerazione: sottoinsieme “premium” delle aree idonee con iter molto più rapido
 
+Quindi:
+
+tutte le aree di accelerazione sono (di fatto) aree idonee,
+ma non tutte le aree idonee sono aree di accelerazione.")
 
 # NUOVO INPUT: Tipologia Impianto
 tipo_impianto = st.sidebar.selectbox("Tipologia di Impianto:", 
