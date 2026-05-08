@@ -21,7 +21,7 @@ url_mappa3 = "https://areeaccelerazione.gse.it/" # URL del geoportale aree di ac
 st.sidebar.markdown(f"[📍Scoprilo qui! - Consulta la Mappa Ufficiale]({url_mappa1})")
 st.sidebar.markdown(f"[📍O qui! - Consulta la Mappa Ufficiale GSE, con aree idonee dichiarate dalla regione (fino ad adesso)]({url_mappa2})")
 st.sidebar.markdown(f"[💡Altra piattaforma utile - Consulta la Mappa Ufficiale GSE, per capire (nel caso in cui l'area è idonea) se fa anche parte delle aree di accelerazione]({url_mappa3})")
-st.write("""La differenza è importante, perché spesso vengono confuse ma giuridicamente non sono la stessa cosa.
+st.sidebar.write("""La differenza è importante, perché spesso vengono confuse ma giuridicamente non sono la stessa cosa.
 In sintesi:
 -Area idonea:	area dove gli impianti FER sono considerati compatibili/favoriti
 -Area di accelerazione: sottoinsieme “premium” delle aree idonee con iter molto più rapido
