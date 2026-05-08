@@ -7,18 +7,7 @@ logo = Image.open("logonuovo.png")
 # Configurazione Pagina
 st.set_page_config(page_title="Permitting FVT Sicilia 2026", layout="wide")
 
-st.image(logo, width=100)
-st.markdown("""
-        <style>
-            .title-text {
-                display: flex;
-                align-items: center;
-                height: 80px; /* Deve essere simile alla width/altezza del logo */
-                margin: 0;
-            }
-        </style>
-        <h1 class="title-text">Expert System: Iter Autorizzativo FVT Sicilia 2026</h1>
-    """, unsafe_allow_html=True)
+st.image(logo, width=200)
 st.title("Expert System: Iter Autorizzativo FVT Sicilia 2026")
 
 # Creiamo due colonne: la prima occupa il 70% dello spazio, la seconda il 30%
