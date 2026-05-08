@@ -8,11 +8,8 @@ logo = Image.open("logonuovo.png")
 st.set_page_config(page_title="Permitting FVT Sicilia 2026", layout="wide")
 
 # Header con Logo e Titolo
-col_l, col_t = st.columns([0.15, 0.85])
-with col_l:
-    st.image(logo, width=150)
-with col_t:
-    st.title("Expert System: Iter Autorizzativo FVT Sicilia 2026")
+st.image(logo, width=150)
+st.title("Expert System: Iter Autorizzativo FVT Sicilia 2026")
 
 # Creiamo due colonne: la prima occupa il 70% dello spazio, la seconda il 30%
 col_principale, col_info = st.columns([0.7, 0.3])
