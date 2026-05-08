@@ -115,11 +115,11 @@ with col_info:
       Assicurati di avere i titoli di possesso del terreno pronti per il caricamento sul portale SUER.
       """)
       st.sidebar.write("""La differenza è importante, perché spesso vengono confuse ma giuridicamente non sono la stessa cosa.
-    In sintesi:
-    -Area idonea:	area dove gli impianti FER sono considerati compatibili/favoriti
-    -Area di accelerazione: sottoinsieme “premium” delle aree idonee con iter molto più rapido
-    
-    Quindi:
-    
-    tutte le aree di accelerazione sono (di fatto) aree idonee,
-    ma non tutte le aree idonee sono aree di accelerazione.""")
+        In sintesi:
+        -Area idonea:	area dove gli impianti FER sono considerati compatibili/favoriti
+        -Area di accelerazione: sottoinsieme “premium” delle aree idonee con iter molto più rapido
+        
+        Quindi:
+        
+        tutte le aree di accelerazione sono (di fatto) aree idonee,
+        ma non tutte le aree idonee sono aree di accelerazione.""")
